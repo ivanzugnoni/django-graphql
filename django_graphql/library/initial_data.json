@@ -1,0 +1,144 @@
+[
+    {
+        "model": "library.Author",
+        "pk": "fb5166ff-a627-4ac7-9b28-2b58ead11bb2",
+        "fields": {
+            "name": "J. K. Rowling",
+            "slug": "j-k-rowling"
+        }
+    },
+    {
+        "model": "library.Author",
+        "pk": "ea56cb72-a13d-4ae7-a3dd-558cdd2dc664",
+        "fields": {
+            "name": "George R. R. Martin",
+            "slug": "george-r-r-martin"
+        }
+    },
+    {
+        "model": "library.Book",
+        "pk": "bb25d727-a70f-44cc-a4a9-0aa9c171a6cd",
+        "fields": {
+            "name": "Harry Potter and the Sorcerer's Stone",
+            "slug": "harry-potter-and-the-sorcerers-stone",
+            "author": "fb5166ff-a627-4ac7-9b28-2b58ead11bb2"
+        }
+    },
+    {
+        "model": "library.Book",
+        "pk": "6c61039e-adf9-4fe7-a1fa-de09e860c995",
+        "fields": {
+            "name": "Harry Potter and the Chamber of Secrets",
+            "slug": "harry-potter-and-the-chamber-of-secrets",
+            "author": "fb5166ff-a627-4ac7-9b28-2b58ead11bb2"
+        }
+    },
+    {
+        "model": "library.Book",
+        "pk": "364637ad-e3ad-4361-9e1c-cdb3642d48a1",
+        "fields": {
+            "name": "Harry Potter and the Prisoner of Azkaban",
+            "slug": "harry-potter-and-the-prisoner-of-azkaban",
+            "author": "fb5166ff-a627-4ac7-9b28-2b58ead11bb2"
+        }
+    },
+    {
+        "model": "library.Book",
+        "pk": "a51a3d4e-5a87-4152-b1fc-da4736f18324",
+        "fields": {
+            "name": "Harry Potter and the Goblet of Fire",
+            "slug": "harry-potter-and-the-goblet-of-fire",
+            "author": "fb5166ff-a627-4ac7-9b28-2b58ead11bb2"
+        }
+    },
+    {
+        "model": "library.Book",
+        "pk": "60b98564-1f57-4af4-a486-521e9f5d4fcb",
+        "fields": {
+            "name": "Harry Potter and the Order of the Phoenix",
+            "slug": "harry-potter-and-the-order-of-the-phoenix",
+            "author": "fb5166ff-a627-4ac7-9b28-2b58ead11bb2"
+        }
+    },
+    {
+        "model": "library.Book",
+        "pk": "2128b9cb-30e4-4fd8-ae4c-046d18d10edc",
+        "fields": {
+            "name": "Harry Potter and the Half-Blood Prince",
+            "slug": "harry-potter-and-the-half-blood-prince",
+            "author": "fb5166ff-a627-4ac7-9b28-2b58ead11bb2"
+        }
+    },
+    {
+        "model": "library.Book",
+        "pk": "9a0b4fda-952c-4c4f-bf12-e5d12d63ea4d",
+        "fields": {
+            "name": "Harry Potter and the Deathly Hallows",
+            "slug": "harry-potter-and-the-deathly-hallows",
+            "author": "fb5166ff-a627-4ac7-9b28-2b58ead11bb2"
+        }
+    },
+    {
+        "model": "library.Book",
+        "pk": "85f9e025-0dfd-4fa0-81bc-5c96f7d68c8d",
+        "fields": {
+            "name": "A Game of Thrones",
+            "slug": "a-game-of-thrones",
+            "author": "ea56cb72-a13d-4ae7-a3dd-558cdd2dc664"
+        }
+    },
+    {
+        "model": "library.Book",
+        "pk": "e06104e0-0ccd-4dc6-8093-8cc57b296a10",
+        "fields": {
+            "name": "A Clash of Kings",
+            "slug": "a-clash-of-kings",
+            "author": "ea56cb72-a13d-4ae7-a3dd-558cdd2dc664"
+        }
+    },
+    {
+        "model": "library.Book",
+        "pk": "18ddd9e2-0632-44b3-a7dd-4803355ac08a",
+        "fields": {
+            "name": "A Storm of Swords",
+            "slug": "a-storm-of-swords",
+            "author": "ea56cb72-a13d-4ae7-a3dd-558cdd2dc664"
+        }
+    },
+    {
+        "model": "library.Book",
+        "pk": "dd817d30-430e-4e2a-b340-300a1f8b87d3",
+        "fields": {
+            "name": "A Feast for Crows",
+            "slug": "a-feast-for-crows",
+            "author": "ea56cb72-a13d-4ae7-a3dd-558cdd2dc664"
+        }
+    },
+    {
+        "model": "library.Book",
+        "pk": "f3f9728a-005b-4a9f-8aec-33a3cb0cabf8",
+        "fields": {
+            "name": "A Dance with Dragons",
+            "slug": "a-dance-with-dragons",
+            "author": "ea56cb72-a13d-4ae7-a3dd-558cdd2dc664"
+        }
+    },
+    {
+        "model": "library.Book",
+        "pk": "a83c8aac-4bab-48d2-b60b-d63637f63a70",
+        "fields": {
+            "name": "The Winds of Winter",
+            "slug": "the-winds-of-winter",
+            "author": "ea56cb72-a13d-4ae7-a3dd-558cdd2dc664"
+        }
+    },
+    {
+        "model": "library.Book",
+        "pk": "f412d3c7-8556-4fda-884f-c1b456e52564",
+        "fields": {
+            "name": "A Dream of Spring",
+            "slug": "a-dream-of-sprint",
+            "author": "ea56cb72-a13d-4ae7-a3dd-558cdd2dc664"
+        }
+    }
+]
