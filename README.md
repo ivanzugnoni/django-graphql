@@ -17,7 +17,7 @@ $ django-admin migrate
 
 Load initial data
 ```
-$ django-admin loaddata django_graphql/library/initial_data.json
+$ django-admin loaddata initial_data.json
 ```
 
 Runserver
