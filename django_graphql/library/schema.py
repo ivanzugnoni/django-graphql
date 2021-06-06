@@ -1,6 +1,7 @@
+import uuid
+
 import graphene
 from graphene import relay
-
 from graphene_django import DjangoObjectType
 from graphene_django.filter import DjangoFilterConnectionField
 from graphene.utils.str_converters import to_snake_case
@@ -42,6 +43,46 @@ class AuthorNode(DjangoObjectType):
         }
 
 
+class CreateAuthorMutation(graphene.Mutation):
+    class Arguments:
+        id = graphene.UUID()
+        name = graphene.String(required=True)
+
+    author = graphene.Field(AuthorNode)
+
+    @classmethod
+    def mutate(cls, root, info, name):
+        author = Author.objects.create(name=name)
+        return CreateAuthorMutation(author=author)
+
+
+class UpdateAuthorMutation(graphene.Mutation):
+    class Arguments:
+        id = graphene.UUID(required=True)
+        name = graphene.String(required=True)
+
+    author = graphene.Field(AuthorNode)
+
+    @classmethod
+    def mutate(cls, root, info, name, id):
+        author = Author.objects.get(id=id)
+        author.name = name
+        author.save()
+        return UpdateAuthorMutation(author=author)
+
+
+class DeleteAuthorMutation(graphene.Mutation):
+    class Arguments:
+        id = graphene.UUID(required=True)
+
+    author = graphene.Field(AuthorNode)
+
+    @classmethod
+    def mutate(cls, root, info, id):
+        Author.objects.get(id=id).delete()
+        return DeleteAuthorMutation()
+
+
 class BookNode(DjangoObjectType):
     class Meta:
         model = Book
@@ -63,4 +104,9 @@ class Query(graphene.ObjectType):
     )
 
 
-schema = graphene.Schema(query=Query)
+class Mutation(graphene.ObjectType):
+    create_author = CreateAuthorMutation.Field()
+    update_author = UpdateAuthorMutation.Field()
+    delete_author = DeleteAuthorMutation.Field()
+
+schema = graphene.Schema(query=Query, mutation=Mutation)
