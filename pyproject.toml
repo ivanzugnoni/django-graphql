@@ -8,6 +8,8 @@ authors = ["Ivan Zugnoni <zugnoni.ivan@gmail.com>"]
 python = "^3.8"
 django = "^3.2.4"
 django-model-utils = "^4.1.1"
+graphene-django = "^2.15.0"
+django-filter = "^2.4.0"
 
 [tool.poetry.dev-dependencies]
 ipdb = "^0.13.9"

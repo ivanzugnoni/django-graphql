@@ -30,6 +30,10 @@ class Author(UUIDModelMixin, SlugModelMixin, TimeStampedModel):
     def __str__(self):
         return self.name
 
+    @property
+    def number_of_books(self):
+        return self.book_set.count()
+
 
 class Book(UUIDModelMixin, SlugModelMixin, TimeStampedModel):
     name = models.CharField(max_length=128)

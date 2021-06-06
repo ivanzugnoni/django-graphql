@@ -122,23 +122,5 @@
             "slug": "a-dance-with-dragons",
             "author": "ea56cb72-a13d-4ae7-a3dd-558cdd2dc664"
         }
-    },
-    {
-        "model": "library.Book",
-        "pk": "a83c8aac-4bab-48d2-b60b-d63637f63a70",
-        "fields": {
-            "name": "The Winds of Winter",
-            "slug": "the-winds-of-winter",
-            "author": "ea56cb72-a13d-4ae7-a3dd-558cdd2dc664"
-        }
-    },
-    {
-        "model": "library.Book",
-        "pk": "f412d3c7-8556-4fda-884f-c1b456e52564",
-        "fields": {
-            "name": "A Dream of Spring",
-            "slug": "a-dream-of-sprint",
-            "author": "ea56cb72-a13d-4ae7-a3dd-558cdd2dc664"
-        }
     }
 ]
