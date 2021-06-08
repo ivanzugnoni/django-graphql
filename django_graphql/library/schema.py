@@ -9,6 +9,9 @@ from graphene.utils.str_converters import to_snake_case
 from library.models import Author, Book
 
 
+# NOTE: This class is kind of a hack because Ordering AND Filtering
+# were not working together. Probably this will be resolved in
+# future versions of graphene framework
 class OrderedDjangoFilterConnectionField(DjangoFilterConnectionField):
     @classmethod
     def resolve_queryset(
